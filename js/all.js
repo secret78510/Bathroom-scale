@@ -110,7 +110,6 @@ list.addEventListener('click', function (e) {
     if (e.target.nodeName != 'A') { return }
     var index = e.target.dataset.index;
     data.splice(index, 1);
-    
     updateList(data);
     localStorage.setItem('listData', JSON.stringify(data));
 })
